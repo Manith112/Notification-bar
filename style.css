@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+:root{
+    --Red: hsl(1, 90%, 64%);
+--Blue: hsl(219, 85%, 26%);
+--White: hsl(0, 0%, 100%);
+--Very-light-grayish-blue: hsl(210, 60%, 98%);
+--Light-grayish-blue-1: hsl(211, 68%, 94%);
+--Light-grayish-blue-2: hsl(205, 33%, 90%);
+--Grayish-blue: hsl(219, 14%, 63%);
+--Dark-grayish-blue: hsl(219, 12%, 42%);
+--Very-dark-blue: hsl(224, 21%, 14%);
+}
+*{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--Light-grayish-blue-1);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    width: 55%;
+    background-color: var(--White);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 40px 0;
+}
+.container > .noti{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.noti > .left {
+    display: flex;
+    gap: 10px;
+}
+.left > p{
+    font-weight: bold;
+}
+
+.left > span{
+    background-color: var(--Blue);
+    color: var(--White);
+    border-radius: 5px;
+    padding:0px 10px;
+    /* text-align: center; */
+    margin: auto;
+}
+.noti > p {
+    color: var(--Grayish-blue);
+    font-weight: 500;
+    padding-top: 5px;
+}
+.noti > p:hover {
+    color: var(--Blue);
+    cursor: pointer;
+    font-weight: 500;
+}
+/* box  */
+.message > .box {
+    padding: 10px;
+    display: flex;
+    background-color: var(--Light-grayish-blue-2);
+    border-radius: 5px;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+.message > .box-none {
+    background-color: transparent;
+    padding-bottom: 0px;
+}
+.message > .box-none-two {
+    background-color: transparent;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.message > .box-none-three {
+    background-color: transparent;
+}
+.box-none-two > .img-two{
+    display: flex;
+    gap: 15px;
+    
+}
+.img-two > .img > img{
+    width: 50px;
+}
+.img-two > .detail {
+    flex-direction: column;
+    display: flex;
+    padding-top: 5px;
+}
+.img-two > .detail > .minute {
+    color: var(--Grayish-blue);
+    font-weight: normal;
+}
+.box-none-two > .right-img >img{
+    width: 50px;
+}
+.box-none-two > .right-img:hover{
+    box-shadow: 0px 20px 24px 11px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.box > .img > img{
+    width: 50px;
+}
+.box > .detail{
+    display: block;
+}
+.detail > p{
+    display: inline-block;
+    font-weight: bold;
+}
+.detail > p:hover{
+    color: var(--Blue);
+    font-weight: 800;
+    cursor: pointer;
+}
+.detail > p > .gray {
+    color: var(--Dark-grayish-blue);
+    font-weight: normal;
+    padding: 0 5px;
+}
+.detail > p > .bold-gray {
+   color: var(--Dark-grayish-blue);
+   font-weight: bolder;
+}
+.detail > p > .blue {
+    color: var(--Blue);
+    font-weight: 800;
+ }
+.detail > .dot{
+    padding: 5px;
+    background-color: var(--Red);
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
+}
+.box > .row{
+    padding-top: 5px;
+}
+.box > .row > .minute{
+    color: var(--Grayish-blue);
+}
+.message > .send{
+    padding:10px 20px;
+    border: 1px solid var(--Light-grayish-blue-2);
+    border-radius: 10px;
+    columns: var(--Dark-grayish-blue);
+    margin-left: 80px;
+    margin-bottom: 20px;
+}
+.message > .send:hover{
+    background-color: var(--Light-grayish-blue-2);
+    cursor: pointer;
+    color: var(--Dark-grayish-blue);
+}
+
+@media screen and (max-width: 750px){
+    .container{
+        width: 100%;
+        margin: 0;
+        height: 100%;
+        border-radius: 0px;
+    }
+}
